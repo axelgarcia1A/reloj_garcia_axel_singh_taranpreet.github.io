@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #ff9900;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+}
+.clock {
+    font-size: 3em;
+    margin: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+input, button {
+    padding: 10px;
+    font-size: 1em;
+    margin: 5px;
+}
+button {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ff2222;
+}
+#countdown {
+    font-size: 2em;
+    margin: 20px 0;
+}
+.time-selector input {
+    width: 60px;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0 5px;
+}

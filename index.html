@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj</title>
+    <link rel="stylesheet" href="Style/Style.css">
+</head>
+<body>
+    <h1>Temporizador de alarma</h1>
+    <div class="clock" id="currentTime">--:--:--</div>
+
+    <!-- Alarma -->
+    <h2>Establece la alarma</h2>
+    <label for="alarmTime">Hora exacta (ex: 10:44 AM):</label>
+    <input type="time" id="alarmTime">
+    <button onclick="setAlarm()">Establecer Alarma</button>
+
+    <!-- Compte enrere -->
+    <h2>Cuenta Atras</h2>
+    <div class="time-selector">
+        <label for="hours">Horas:</label>
+        <input type="number" id="hours" min="0" max="23" value="0">
+        <label for="minutes">Minutos:</label>
+        <input type="number" id="minutes" min="0" max="59" value="0">
+        <label for="seconds">Segundos:</label>
+        <input type="number" id="seconds" min="0" max="59" value="0">
+    </div>
+    <button onclick="setCountdown()">Iniciar Cuenta Atras</button>
+    <button onclick="clearAlarm()">Desactivar</button>
+
+    <div id="countdown"></div>
+
+    <div id="alarmNotification" style="display:none; background-color: #ff4444; color: white; padding: 10px; margin-top: 20px; font-size: 1.2em;">
+        <span>⏰ ¡Alarma activada! </span>
+        <button onclick="stopSound()">Detener Sonido</button>
+    </div>
+    
+    <div id="countdownNotification" style="display:none; background-color: #ff4444; color: white; padding: 10px; margin-top: 20px; font-size: 1.2em;">
+        <span>⏰ ¡Cuenta Atras acabada! </span>
+        <button onclick="stopSound()">Detener Sonido</button>
+    </div>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
